@@ -37,8 +37,6 @@ module.exports = {
       '@a': path.resolve(__dirname, 'src/app'),
       '@c': path.resolve(__dirname, 'src/common'),
       '@st': path.resolve(__dirname, 'src/styles/'),
-      '@todos': path.resolve(__dirname, 'src/todos'),
-      '@todoD': path.resolve(__dirname, 'src/todos/duck'),
       '@search': path.resolve(__dirname, 'src/search'),
       '@fsearch': path.resolve(__dirname, 'src/flickrsearch'),
       '@fsearchD': path.resolve(__dirname, 'src/flickrsearch/duck')
