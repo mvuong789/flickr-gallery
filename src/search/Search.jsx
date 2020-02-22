@@ -15,6 +15,7 @@ const Search = (props) => {
       placeholder="Search"
       onChange={e => handleOnChange(e.target.value)}
       value={searchText}
+      type="search"
     />
   )
 }
