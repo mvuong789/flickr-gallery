@@ -5,13 +5,13 @@ import store from '@a/store';
 
 import '@st/index.styl';
 
-import FlickrSearch from '@fsearch/FlickrSearch';
+import FlickrSearchContainer from '@fsearch/FlickrSearchContainer';
 
 ReactDOM.render(
   <Provider store={store}>
     <div>
       <h1>Flickr Search</h1>
-      <FlickrSearch />
+      <FlickrSearchContainer />
     </div>
   </Provider>,
   document.getElementById('app'),
