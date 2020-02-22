@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
 
-const Search = () => {
+const Search = (props) => {
   const [searchText, setSearchText] = useState('');
+
+  const { onChange } = props;
+
+  const handleOnChange = text => {
+    setSearchText(text);
+    onChange(text);
+  }
 
   return (
     <input

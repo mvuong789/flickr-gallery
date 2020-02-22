@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import Search from '@search/Search';
 
 describe('Search component tests', () => {
@@ -11,10 +11,11 @@ describe('Search component tests', () => {
   });
 
   test('Should update value when it has changed', () => {
-    const search = shallow(<Search />);
+    const onChange = jest.fn();
+    const search = shallow(<Search onChange={onChange} />);
 
     search.find('input').simulate('change', { target: { value: 'dog' }});
     expect(search.props().value).toEqual('dog');
   });
-  
+
 });
