@@ -39,7 +39,8 @@ module.exports = {
       '@st': path.resolve(__dirname, 'src/styles/'),
       '@search': path.resolve(__dirname, 'src/search'),
       '@fsearch': path.resolve(__dirname, 'src/flickrsearch'),
-      '@fsearchD': path.resolve(__dirname, 'src/flickrsearch/duck')
+      '@fsearchD': path.resolve(__dirname, 'src/flickrsearch/duck'),
+      '@u': path.resolve(__dirname, 'src/utils')
     }
   },
   devtool: 'inline-source-map',
