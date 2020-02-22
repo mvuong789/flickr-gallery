@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import store from '@a/store';
 
-import '@st/index.styl';
+import './index.styl';
 
 import FlickrSearchContainer from '@fsearch/FlickrSearchContainer';
 
