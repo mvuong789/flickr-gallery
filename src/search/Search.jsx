@@ -13,7 +13,7 @@ const Search = (props) => {
   return (
     <input
       placeholder="Search"
-      onChange={e => setSearchText(e.target.value)}
+      onChange={e => handleOnChange(e.target.value)}
       value={searchText}
     />
   )
