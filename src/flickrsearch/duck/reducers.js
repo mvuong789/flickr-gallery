@@ -16,7 +16,7 @@ const reducer = (state = initialState, action) => {
   return produce(state, draft => {
     switch (type) {
       case RECEIVE_IMAGES: {
-        draft[IMAGES].push(...data);
+        draft[IMAGES] = data;
         draft[IS_FETCHING] = false;
         break;
       }
