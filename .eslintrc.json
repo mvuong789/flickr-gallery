@@ -1,0 +1,40 @@
+
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+        "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": [
+        ["@todos/index", "./src/todos/index"],
+        ["@todoD/actions", "./src/todos/duck/actions"],
+        ["@todoD/selectors", "./src/todos/duck/selectors"],
+        ["@todoD/reducer", "./src/todos/duck/reducer"],
+        ["@todoD/operations", "./src/todos/duck/operations"],
+        ["@todoD/types", "./src/todos/duck/types"],
+        ["@todoD/fields", "./src/todos/duck/fields"]
+      ]
+    }
+  }
+}

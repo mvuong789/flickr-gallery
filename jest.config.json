@@ -1,0 +1,6 @@
+{
+  "moduleNameMapper": {
+    "^@search/Search": "<rootDir>/src/search/Search",
+    "^@c/use-debounce": "<rootDir>/src/common/use-debounce"
+  }
+}
