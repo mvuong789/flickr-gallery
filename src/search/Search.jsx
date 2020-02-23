@@ -12,6 +12,7 @@ const Search = (props) => {
 
   return (
     <input
+      className="search-input"
       placeholder="Search"
       onChange={e => handleOnChange(e.target.value)}
       value={searchText}
