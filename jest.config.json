@@ -1,6 +1,9 @@
 {
   "moduleNameMapper": {
     "^@search/Search": "<rootDir>/src/search/Search",
+    "^@fsearchD/actions": "<rootDir>/src/flickrSearch/duck/actions",
+    "^@fsearchD/reducers": "<rootDir>/src/flickrSearch/duck/reducers",
+    "^@fsearchD/selectors": "<rootDir>/src/flickrSearch/duck/selectors",
     "^@c/use-debounce": "<rootDir>/src/common/use-debounce"
   }
 }

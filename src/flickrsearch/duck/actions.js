@@ -1,4 +1,4 @@
-import fetch from 'cross-fetch';
+// import fetch from 'cross-fetch';
 
 import * as TYPES from './types';
 
@@ -303,7 +303,7 @@ export const fetchImages = (data) => {
         ]
       };
 
-      dispatch(receiveImages(response.items))
+      dispatch(receiveImages(response.items));
     } else {
       dispatch(receiveImages([]));
     }

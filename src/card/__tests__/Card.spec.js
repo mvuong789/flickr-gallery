@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 import Card from '../Card';
 
 describe('Card component tests', () => {
@@ -7,7 +7,7 @@ describe('Card component tests', () => {
     const card = shallow(
       <Card>
         <span>Hello</span>
-      </Card>
+      </Card>,
     );
 
     expect(card.find('div.card')).toBeTruthy();

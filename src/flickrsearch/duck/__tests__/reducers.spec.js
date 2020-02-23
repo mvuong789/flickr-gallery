@@ -11,8 +11,8 @@ describe('Testing fsearch reducers', () => {
       {
         [IMAGES]: [],
         [IS_FETCHING]: false,
-      }
-    )
+      },
+    );
   });
 
   it('should handle requestImages', () => {
@@ -38,7 +38,7 @@ describe('Testing fsearch reducers', () => {
       },
       {
         type: RECEIVE_IMAGES,
-        data: [{ id: 0, image: 'url' }]
+        data: [{ id: 0, image: 'url' }],
       },
     )).toEqual({
       images: [{ id: 0, image: 'url' }],
